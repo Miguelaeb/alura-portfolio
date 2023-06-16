@@ -46,17 +46,46 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     //input files
-    const nameForm = document.querySelector("#name");
+    const nameForm = document.getElementById("name");
     const emailForm = document.getElementById("email");
     const subjectForm = document.getElementById("subject");
     const messageForm = document.getElementById("message");
 
+    // error
+    const nameError = document.querySelector("#nameError");
+    const emailError = document.querySelector("#emailError");
+    const subjectError = document.querySelector("#subjectError");
+    const messageError = document.querySelector("#messageError");
+
     // Check if the name input is empty
     if (nameForm.value.trim() === "") {
-      nameForm.classList.add("border-portfolio-primery-color-red");
+        nameError.classList.remove("hidden");
     } else {
-      nameForm.classList.remove("border-portfolio-primery-color-red");
+        nameError.classList.add("hidden");
     }
+
+    const emailPattern = /\S+@\S+\.\S+/;
+    if (!emailPattern.test(emailForm.value.trim())) {
+        emailError.classList.remove("hidden");
+        emailForm.placeholder = "email@example/com";
+    } else {
+        emailError.classList.add("hidden");
+    }
+
+    if (subjectForm.value.trim() === "") {
+        subjectError.classList.remove("hidden");
+    } else {
+        subjectError.classList.add("hidden");
+    }
+
+    if (messageForm.value.trim() === "") {
+        messageError.classList.remove("hidden");
+    } else {
+        messageError.classList.add("hidden");
+    }
+
+
+
 });
 
 // Smooth scroll

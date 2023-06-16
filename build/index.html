@@ -21,7 +21,7 @@
 
     <body
         class="relative bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-5 py-4 md:px-0">
-        <nav>
+        <nav class="relative">
             <div
                 class="relative flex flex-wrap items-center justify-between md:px-10">
                 <a
@@ -43,7 +43,7 @@
                         alt="humburger--icon" />
                 </button>
                 <div
-                    class="navbar--links--container hidden bg-white w-10/12 rounded-md mx-auto fixed z-20 top-1/4 left-0 right-0 md:block md:relative md:top-0 md:w-auto"
+                    class="navbar--links--container hidden bg-white w-10/12 rounded-md fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:block md:relative md:top-0 md:left-0 md:transform-none md:w-auto"
                     id="navbar-default">
                     <ul
                         class="navbar--links flex flex-col gap-4 p-4 md:p-0 md:flex-row md:space-x-8">
@@ -52,45 +52,55 @@
                                 href="#projects"
                                 class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
                                 >Projects
-                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">See what I have made</p>
-                                </a
-                            >
+                                <p
+                                    class="font-SourceSansPro text-lg mt-2 md:hidden">
+                                    See what I have made
+                                </p>
+                            </a>
                         </li>
                         <li>
                             <a
                                 href="#aboutMe"
-                                class="block py-2 pl-3 pr-4  font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
                                 >About me
-                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Know who I am</p>
-                                </a
-                            >
+                                <p
+                                    class="font-SourceSansPro text-lg mt-2 md:hidden">
+                                    Know who I am
+                                </p>
+                            </a>
                         </li>
                         <li>
                             <a
                                 href="#technologies"
                                 class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
                                 >Technologies
-                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">This is what I handle</p>
-                                </a
-                            >
+                                <p
+                                    class="font-SourceSansPro text-lg mt-2 md:hidden">
+                                    This is what I handle
+                                </p>
+                            </a>
                         </li>
                         <li>
                             <a
                                 href="#education"
                                 class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
                                 >Education
-                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Where I get my knowledge</p>
-                                </a
-                            >
+                                <p
+                                    class="font-SourceSansPro text-lg mt-2 md:hidden">
+                                    Where I get my knowledge
+                                </p>
+                            </a>
                         </li>
                         <li>
                             <a
                                 href="#contact"
-                                class="block py-2 pl-3 pr-4  font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
                                 >Contact
-                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Let's talk</p>
-                                </a
-                            >
+                                <p
+                                    class="font-SourceSansPro text-lg mt-2 md:hidden">
+                                    Let's talk
+                                </p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -119,10 +129,24 @@
                 </p>
 
                 <div class="flex justify-center gap-4 mt-5">
-                    <a href="https://github.com/Miguelaeb"><i class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://twitter.com/Miguel_Studded"><i class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"><i class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i></a>
+                    <a href="https://github.com/Miguelaeb"
+                        ><i
+                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a href="https://twitter.com/Miguel_Studded"
+                        ><i
+                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"
+                        ><i
+                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a
+                        href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="
+                        ><i
+                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
                 </div>
 
                 <button
@@ -148,7 +172,10 @@
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-SourceSansPro font-semibold text-lg">Text encryptor</p>
+                                <p
+                                    class="font-SourceSansPro font-semibold text-lg">
+                                    Text encryptor
+                                </p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -172,7 +199,10 @@
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-SourceSansPro font-semibold text-lg">Blogr landing page</p>
+                                <p
+                                    class="font-SourceSansPro font-semibold text-lg">
+                                    Blogr landing page
+                                </p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -196,7 +226,10 @@
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-SourceSansPro font-semibold text-lg">Huddle landing page</p>
+                                <p
+                                    class="font-SourceSansPro font-semibold text-lg">
+                                    Huddle landing page
+                                </p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -220,7 +253,10 @@
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-SourceSansPro font-semibold text-lg">Portafolio</p>
+                                <p
+                                    class="font-SourceSansPro font-semibold text-lg">
+                                    Portafolio
+                                </p>
 
                                 <div class="flex gap-8">
                                     <a href=""
@@ -287,12 +323,14 @@
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
-                <p class="mt-14 text-left font-SourceSansPro font-semibold text-lg">Front-End.</p>
+                <p
+                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg">
+                    Front-End.
+                </p>
 
                 <div class="relative w-full mt-3">
                     <div class="grid w-full grid-cols-2 gap-6 lg:grid-cols-4">
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -300,10 +338,9 @@
                                 alt="html logo" />
 
                             <p class="font-SourceSansPro">HTML</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -311,10 +348,9 @@
                                 alt="css logo" />
 
                             <p class="font-SourceSansPro">CSS</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -322,10 +358,9 @@
                                 alt="javascript logo" />
 
                             <p class="font-SourceSansPro">JavaScript</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-7 mr-2"
@@ -333,10 +368,9 @@
                                 alt="tailwind logo" />
 
                             <p class="font-SourceSansPro">Tailwind CSS</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-7 mr-2"
@@ -344,16 +378,18 @@
                                 alt="bootstrap logo" />
 
                             <p class="font-SourceSansPro">Bootstrap</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
-                <p class="mt-14 text-left font-SourceSansPro font-semibold text-lg">Tools.</p>
+                <p
+                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg">
+                    Tools.
+                </p>
 
                 <div class="relative w-full mt-3">
                     <div class="grid w-full grid-cols-2 gap-6 lg:grid-cols-4">
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -361,10 +397,9 @@
                                 alt="vsCode logo" />
 
                             <p class="font-SourceSansPro">VS Code</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -372,32 +407,32 @@
                                 alt="github logo" />
 
                             <p class="font-SourceSansPro">Github</p>
-                        </a>
+                        </div>
 
-                        <a
+                        <div
                             href="#"
-                            class="flex items-center  items-centerpy-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
+                            class="flex items-center items-centerpy-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md"
+                            items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/git_logo.png"
                                 alt="git logo" />
 
                             <p class="font-SourceSansPro">Git</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
-                            class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
+                        <div
+                            class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md"
+                            items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/npm_logo.png"
                                 alt="npm logo" />
 
                             <p class="font-SourceSansPro">NPM</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
+                        <div
                             class="flex py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
@@ -405,58 +440,61 @@
                                 alt="yarn logo" />
 
                             <p class="font-SourceSansPro">Yarn</p>
-                        </a>
+                        </div>
 
-                        <a
-                            href="#"
-                            class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
+                        <div
+                            class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md"
+                            items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/figma_logo.png"
                                 alt="figma logo" />
 
                             <p class="font-SourceSansPro">Figma</p>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="mt-20" id="education">
-                <h2 class="font-Poppins font-semibold text-3xl">
-                    Education.
-                </h2>
+                <h2 class="font-Poppins font-semibold text-3xl">Education.</h2>
 
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
-                    <div class="relative mt-14 items-center w-full">
-                        <div class="grid w-full grid-cols-1 gap-12 lg:grid-cols-3">
+                <div class="relative mt-14 items-center w-full">
+                    <div class="grid w-full grid-cols-1 gap-12 lg:grid-cols-3">
+                        <a href="https://www.udemy.com/">
+                            <img
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                src="./images/udemy_logo.png"
+                                alt="udemy" />
+                            <p class="font-SourceSansPro font-semibold">
+                                HTML/CSS/JavaScript | 2019 | Udemy
+                            </p>
+                        </a>
 
-                            <a href="https://www.udemy.com/">
-                                <img
-                                    class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
-                                    src="./images/udemy_logo.png"
-                                    alt="udemy" />
-                                    <p class="font-SourceSansPro font-semibold">HTML/CSS/JavaScript | 2019 | Udemy</p>
-                            </a>
+                        <a href="https://www.freecodecamp.org/">
+                            <img
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                src="./images/freeeCodeCamp_logo.png"
+                                alt="freeCodeCamp" />
+                            <p class="font-SourceSansPro font-semibold">
+                                Responsive Web Design | 2020 | freeCodeCamp
+                            </p>
+                        </a>
 
-                            <a href="https://www.freecodecamp.org/">
-                                <img
-                                    class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
-                                    src="./images/freeeCodeCamp_logo.png"
-                                    alt="freeCodeCamp" />
-                                    <p class="font-SourceSansPro font-semibold">Responsive Web Design | 2020 | freeCodeCamp</p>
-                            </a>
-    
-                            <a href="https://www.aluracursos.com/">
-                                <img
-                                    class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
-                                    src="./images/alura_logo.png"
-                                    alt="alura" />
-                                    <p class="font-SourceSansPro font-semibold">Front-End Development | 2023 | Alura Latam</p>
-                            </a>
-                        </div>
+                        <a href="https://www.aluracursos.com/">
+                            <img
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                src="./images/alura_logo.png"
+                                alt="alura" />
+                            <p class="font-SourceSansPro font-semibold">
+                                Front-End Development | 2023 | Alura Latam
+                            </p>
+                        </a>
                     </div>
+                </div>
             </section>
 
             <section class="mt-20" id="contact">
@@ -464,41 +502,112 @@
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
-                    <form class="mt-14" id="contactForm" method="post">
+                <form class="mt-14" id="contactForm" method="post">
+                    <div>
+                        <label
+                            for="name"
+                            class="block text-left font-SourceSansPro font-semibold text-lg"
+                            >Your name:</label
+                        >
+                        <input
+                            type="text"
+                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
+                            id="name"
+                            aria-describedby="nameError"
+                            name="name" />
+                            <p class="hidden font-SourceSansPro font-semibold text-portfolio-primery-color-red text-left" id="nameError" role="alert" aria-live="assertive">Name cannot be empty</p>
+                    </div>
 
-                        <label for="name" class="block text-left font-SourceSansPro font-semibold text-lg">Your name:</label>
-                        <input type="text" class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro" id="name" name="name" required>
-                        
-                        <label for="email" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Your email:</label>
-                        <input type="email" class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro" id="email" name="email" required>
-                        
-                        <label for="subject" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Subject:</label>
-                        <input type="text" class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro" id="subject" name="subject" required>
-                        
-                        <label for="message" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Message:</label>
-                        <textarea id="message" class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro" name="message" required></textarea>
-                        
-                        <button type="submit"
-                    class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md">
-                    Send
-                </button>
-                      </form>
+                    <div>
+                        <label
+                            for="email"
+                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                            >Your email:</label
+                        >
+                        <input
+                            type="email"
+                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro placeholder:font-semibold placeholder:text-portfolio-primery-color-red"
+                            id="email"
+                            aria-describedby="emailError"
+                            name="email" 
+                            placeholder=""/>
+                            <p class="hidden font-SourceSansPro font-semibold text-portfolio-primery-color-red text-left" id="emailError" role="alert" aria-live="assertive">Looks like this is not an email</p>
+                    </div>
+
+                    <div>
+                        <label
+                            for="subject"
+                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                            >Subject:</label
+                        >
+                        <input
+                            type="text"
+                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
+                            id="subject"
+                            aria-describedby="subjectError"
+                            name="subject" />
+                            <p class="hidden font-SourceSansPro font-semibold text-portfolio-primery-color-red text-left" id="subjectError" role="alert" aria-live="assertive">Subject cannot be empty</p>
+                    </div>
+
+                    <div>
+                        <label
+                            for="message"
+                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                            >Message:</label
+                        >
+                        <textarea
+                            aria-describedby="messageError"
+                            id="message"
+                            class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro"
+                            name="message"
+                            ></textarea>
+                            <p class="hidden font-SourceSansPro font-semibold text-portfolio-primery-color-red text-left" id="messageError" role="alert" aria-live="assertive">Message cannot be empty</p>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md">
+                        Send
+                    </button>
+                </form>
             </section>
         </main>
 
         <footer class="footer--container" id="footer">
             <div
-                    class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
+                class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
             <div class="mt-8">
                 <div class="flex justify-center gap-4 mt-5">
-                    <a href="https://github.com/Miguelaeb"><i class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://twitter.com/Miguel_Studded"><i class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"><i class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i></a>
-                    <a href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i></a>
+                    <a href="https://github.com/Miguelaeb"
+                        ><i
+                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a href="https://twitter.com/Miguel_Studded"
+                        ><i
+                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"
+                        ><i
+                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
+                    <a
+                        href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="
+                        ><i
+                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i
+                    ></a>
                 </div>
 
-               <p class="text-center font-SourceSansPro text-lg my-5">© <span class="dynamic--time">2023</span> <a href="https://github.com/Miguelaeb" class="text-portfolio-primery-color-red hover:text-black">Miguel Evangelista™</a>  All Rights Reserved.</p> 
+                <p class="text-center font-SourceSansPro text-lg my-5">
+                    © <span class="dynamic--time">2023</span>
+                    <a
+                        href="https://github.com/Miguelaeb"
+                        class="text-portfolio-primery-color-red hover:text-black"
+                        >Miguel Evangelista™</a
+                    >
+                    All Rights Reserved.
+                </p>
             </div>
         </footer>
 
