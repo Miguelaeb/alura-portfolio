@@ -15,14 +15,16 @@
 
         <title>Portafolio | Miguel Evangelista</title>
     </head>
-    <!-- TODO Add a bg to the mobile nav -->
+
+    <!-- TODO Add a shadow to the projects img -->
+    <!-- TODO Remove links from the skills and tools -->
     <!-- TODO form appereance -->
     <!-- TODO form validations -->
     <!-- TODO Check hover of the skills section -->
     <!-- TODO Add animation to the website -->
 
     <body
-        class="relative overflow-hidden bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-5 py-4 md:px-0">
+        class="relative bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-5 py-4 md:px-0">
         <nav>
             <div
                 class="relative flex flex-wrap items-center justify-between md:px-10">
@@ -45,43 +47,53 @@
                         alt="humburger--icon" />
                 </button>
                 <div
-                    class="navbar--links--container hidden fixed z-10 top-80 left-0 right-0 w-full md:block md:relative md:top-0 md:w-auto"
+                    class="navbar--links--container hidden bg-white w-10/12 rounded-md mx-auto fixed z-20 top-1/4 left-0 right-0 md:block md:relative md:top-0 md:w-auto"
                     id="navbar-default">
                     <ul
-                        class="navbar--links flex flex-col items-center p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                        class="navbar--links flex flex-col gap-4 p-4 md:p-0 md:flex-row md:space-x-8">
                         <li>
                             <a
                                 href="#projects"
-                                class="block py-2 pl-3 pr-4 text-black font-Poppins text-base hover:text-portfolio-primery-color-red"
-                                >Projects</a
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                >Projects
+                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">See what I have made</p>
+                                </a
                             >
                         </li>
                         <li>
                             <a
                                 href="#aboutMe"
-                                class="block py-2 pl-3 pr-4 text-black font-Poppins text-base hover:text-portfolio-primery-color-red"
-                                >About me</a
+                                class="block py-2 pl-3 pr-4  font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                >About me
+                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Know who I am</p>
+                                </a
                             >
                         </li>
                         <li>
                             <a
                                 href="#technologies"
-                                class="block py-2 pl-3 pr-4 text-black font-Poppins text-base hover:text-portfolio-primery-color-red"
-                                >Technologies</a
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                >Technologies
+                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">This is what I handle</p>
+                                </a
                             >
                         </li>
                         <li>
                             <a
                                 href="#education"
-                                class="block py-2 pl-3 pr-4 text-black font-Poppins text-base hover:text-portfolio-primery-color-red"
-                                >Education</a
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                >Education
+                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Where I get my knowledge</p>
+                                </a
                             >
                         </li>
                         <li>
                             <a
                                 href="#contact"
-                                class="block py-2 pl-3 pr-4 text-black font-Poppins text-base hover:text-portfolio-primery-color-red"
-                                >Contact</a
+                                class="block py-2 pl-3 pr-4  font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                >Contact
+                                <p class="font-SourceSansPro text-lg mt-2 md:hidden">Let's talk</p>
+                                </a
                             >
                         </li>
                     </ul>
@@ -118,7 +130,7 @@
                 </div>
 
                 <button
-                    class="download--button py-2 mt-6 w-full font-Poppins bg-portfolio-primery-color-red rounded-md">
+                    class="download--button py-2 mt-6 w-full font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md">
                     Resume
                 </button>
             </div>
@@ -135,12 +147,12 @@
                     <div class="grid w-full grid-cols-1 gap-12 lg:grid-cols-3">
                         <div>
                             <img
-                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
                                 src="./images/encryptor_project.png"
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-Poppins">Text encryptor</p>
+                                <p class="font-SourceSansPro font-semibold text-lg">Text encryptor</p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -157,14 +169,14 @@
                             </div>
                         </div>
 
-                        <div class="">
+                        <div>
                             <img
-                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
                                 src="./images/blogr_project.jpg"
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-Poppins">Blogr landing page</p>
+                                <p class="font-SourceSansPro font-semibold text-lg">Blogr landing page</p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -181,14 +193,14 @@
                             </div>
                         </div>
 
-                        <div class="">
+                        <div>
                             <img
-                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
                                 src="./images/huddle_project.jpg"
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-Poppins">Huddle landing page</p>
+                                <p class="font-SourceSansPro font-semibold text-lg">Huddle landing page</p>
 
                                 <div class="flex gap-8">
                                     <a
@@ -205,14 +217,14 @@
                             </div>
                         </div>
 
-                        <div class="">
+                        <div>
                             <img
-                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
+                                class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
                                 src="./images/huddle_project.jpg"
                                 alt="text encriptador" />
 
                             <div class="flex justify-between">
-                                <p class="font-Poppins">Portafolio</p>
+                                <p class="font-SourceSansPro font-semibold text-lg">Portafolio</p>
 
                                 <div class="flex gap-8">
                                     <a href=""
@@ -279,135 +291,135 @@
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
-                <p class="mt-14 text-left font-Poppins text-lg">Front-End.</p>
+                <p class="mt-14 text-left font-SourceSansPro font-semibold text-lg">Front-End.</p>
 
                 <div class="relative w-full mt-3">
                     <div class="grid w-full grid-cols-2 gap-6 lg:grid-cols-4">
                         <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md hover:bg-[#E2D4CD]">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/html_logo.png"
                                 alt="html logo" />
 
-                            <p class="font-Poppins">HTML</p>
+                            <p class="font-SourceSansPro">HTML</p>
                         </a>
 
                         <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md hover:bg-[#C7D3E9]">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/css_logo.png"
                                 alt="css logo" />
 
-                            <p class="font-Poppins">CSS</p>
+                            <p class="font-SourceSansPro">CSS</p>
                         </a>
 
                         <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/javascript_logo.png"
                                 alt="javascript logo" />
 
-                            <p class="font-Poppins">JavaScript</p>
+                            <p class="font-SourceSansPro">JavaScript</p>
                         </a>
 
                         <a
-                            href="https://tailwindcss.com/"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-7 mr-2"
                                 src="./images/tailwind_logo.png"
                                 alt="tailwind logo" />
 
-                            <p class="font-Poppins">Tailwind CSS</p>
+                            <p class="font-SourceSansPro">Tailwind CSS</p>
                         </a>
 
                         <a
-                            href="https://getbootstrap.com/"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-7 mr-2"
                                 src="./images/bootstrap_logo.png"
                                 alt="bootstrap logo" />
 
-                            <p class="font-Poppins">Bootstrap</p>
+                            <p class="font-SourceSansPro">Bootstrap</p>
                         </a>
                     </div>
                 </div>
 
-                <p class="mt-14 text-left font-Poppins text-lg">Tools.</p>
+                <p class="mt-14 text-left font-SourceSansPro font-semibold text-lg">Tools.</p>
 
                 <div class="relative w-full mt-3">
                     <div class="grid w-full grid-cols-2 gap-6 lg:grid-cols-4">
                         <a
-                            href="https://code.visualstudio.com/"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/vs_logo.png"
                                 alt="vsCode logo" />
 
-                            <p class="font-Poppins">VS Code</p>
+                            <p class="font-SourceSansPro">VS Code</p>
                         </a>
 
                         <a
-                            href="https://github.com/"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/github_logo.png"
                                 alt="github logo" />
 
-                            <p class="font-Poppins">Github</p>
+                            <p class="font-SourceSansPro">Github</p>
                         </a>
 
                         <a
-                            href="https://git-scm.com/"
+                            href="#"
                             class="flex items-center  items-centerpy-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/git_logo.png"
                                 alt="git logo" />
 
-                            <p class="font-Poppins">Git</p>
+                            <p class="font-SourceSansPro">Git</p>
                         </a>
 
                         <a
-                            href="https://www.npmjs.com/"
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/npm_logo.png"
                                 alt="npm logo" />
 
-                            <p class="font-Poppins">NPM</p>
+                            <p class="font-SourceSansPro">NPM</p>
                         </a>
 
                         <a
-                            href="https://yarnpkg.com/"
+                            href="#"
                             class="flex py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md">
                             <img
                                 class="w-6 mr-2"
                                 src="./images/yarn_logo.png"
                                 alt="yarn logo" />
 
-                            <p class="font-Poppins">Yarn</p>
+                            <p class="font-SourceSansPro">Yarn</p>
                         </a>
 
                         <a
-                            href="https://www.figma.com/?fuid="
+                            href="#"
                             class="flex items-center py-4 pl-2 bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm rounded-md" items-center>
                             <img
                                 class="w-6 mr-2"
                                 src="./images/figma_logo.png"
                                 alt="figma logo" />
 
-                            <p class="font-Poppins">Figma</p>
+                            <p class="font-SourceSansPro">Figma</p>
                         </a>
                     </div>
                 </div>
@@ -429,7 +441,7 @@
                                     class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
                                     src="./images/udemy_logo.png"
                                     alt="udemy" />
-                                    <p class="font-Poppins">HTML/CSS/JavaScript | 2019 | Udemy</p>
+                                    <p class="font-SourceSansPro font-semibold">HTML/CSS/JavaScript | 2019 | Udemy</p>
                             </a>
 
                             <a href="https://www.freecodecamp.org/">
@@ -437,7 +449,7 @@
                                     class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
                                     src="./images/freeeCodeCamp_logo.png"
                                     alt="freeCodeCamp" />
-                                    <p class="font-Poppins">Responsive Web Design | 2020 | freeCodeCamp</p>
+                                    <p class="font-SourceSansPro font-semibold">Responsive Web Design | 2020 | freeCodeCamp</p>
                             </a>
     
                             <a href="https://www.aluracursos.com/">
@@ -445,7 +457,7 @@
                                     class="object-cover object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl"
                                     src="./images/alura_logo.png"
                                     alt="alura" />
-                                    <p class="font-Poppins">Front-End Development | 2023 | Alura Latam</p>
+                                    <p class="font-SourceSansPro font-semibold">Front-End Development | 2023 | Alura Latam</p>
                             </a>
                         </div>
                     </div>
@@ -458,20 +470,20 @@
 
                     <form class="mt-14" id="contactForm" method="post">
 
-                        <label for="name" class="block text-left font-Poppins">Your name:</label>
+                        <label for="name" class="block text-left font-SourceSansPro font-semibold text-lg">Your name:</label>
                         <input type="text" class="relative w-full border-solid border-2 border-grayish-blue p-3 pl-8 rounded-lg font-poppins placeholder:font-poppins focus:font-poppins" id="name" name="name" required>
                         
-                        <label for="email" class="block text-left font-Poppins mt-4">Your email:</label>
+                        <label for="email" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Your email:</label>
                         <input type="email" class="relative w-full border-solid border-2 border-grayish-blue p-3 pl-8 rounded-lg font-poppins placeholder:font-poppins focus:font-poppins" id="email" name="email" required>
                         
-                        <label for="subject" class="block text-left font-Poppins mt-4">Subject:</label>
+                        <label for="subject" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Subject:</label>
                         <input type="text" class="relative w-full border-solid border-2 border-grayish-blue p-3 pl-8 rounded-lg font-poppins placeholder:font-poppins focus:font-poppins" id="subject" name="subject" required>
                         
-                        <label for="message" class="block text-left font-Poppins mt-4">Message:</label>
+                        <label for="message" class="block text-left font-SourceSansPro font-semibold text-lg mt-4">Message:</label>
                         <textarea id="message" class="relative w-full border-solid border-2 border-grayish-blue p-3 pl-8 rounded-lg font-poppins placeholder:font-poppins focus:font-poppins" name="message" required></textarea>
                         
                         <button type="submit"
-                    class="block py-2 px-10 mt-6 font-Poppins bg-portfolio-primery-color-red rounded-md">
+                    class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md">
                     Send
                 </button>
                       </form>
