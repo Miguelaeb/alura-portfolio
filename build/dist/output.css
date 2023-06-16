@@ -996,6 +996,14 @@ video {
   color: rgb(226 34 34 / var(--tw-text-opacity));
 }
 
+.focus\:font-SourceSansPro:focus{
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.focus\:font-bold:focus{
+  font-weight: 700;
+}
+
 @media (min-width: 768px){
   .md\:relative{
     position: relative;
