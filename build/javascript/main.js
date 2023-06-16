@@ -64,6 +64,7 @@ form.addEventListener("submit", function (event) {
         nameError.classList.add("hidden");
     }
 
+    // Check if the email input is valid
     const emailPattern = /\S+@\S+\.\S+/;
     if (!emailPattern.test(emailForm.value.trim())) {
         emailError.classList.remove("hidden");
@@ -72,20 +73,19 @@ form.addEventListener("submit", function (event) {
         emailError.classList.add("hidden");
     }
 
+    // Subject if the name input is empty
     if (subjectForm.value.trim() === "") {
         subjectError.classList.remove("hidden");
     } else {
         subjectError.classList.add("hidden");
     }
 
+    // Message if the name input is empty
     if (messageForm.value.trim() === "") {
         messageError.classList.remove("hidden");
     } else {
         messageError.classList.add("hidden");
     }
-
-
-
 });
 
 // Smooth scroll
