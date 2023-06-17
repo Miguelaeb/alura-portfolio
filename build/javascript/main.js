@@ -45,7 +45,7 @@ downloadButton.addEventListener("click", function () {
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    //input files
+    // input files
     const nameForm = document.getElementById("name");
     const emailForm = document.getElementById("email");
     const subjectForm = document.getElementById("subject");
@@ -59,6 +59,7 @@ form.addEventListener("submit", function (event) {
 
     // Check if the name input is empty
     if (nameForm.value.trim() === "") {
+        nameError.classList.add("border-red-400");
         nameError.classList.remove("hidden");
     } else {
         nameError.classList.add("hidden");
