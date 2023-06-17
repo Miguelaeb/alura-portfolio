@@ -1,11 +1,14 @@
 const iconHumberger = document.querySelector(".icon--humburger");
-const navbarLinksContainer = document.querySelector(".navbar--links--container");
+const navbarLinksContainer = document.querySelector(
+    ".navbar--links--container"
+);
 const logo = document.querySelector(".logo");
 const headerContainer = document.querySelector(".header--container");
 const mainContainer = document.querySelector(".main--container");
 const downloadButton = document.querySelector(".download--button");
 const footerContainer = document.querySelector(".footer--container");
 const form = document.querySelector("#contactForm");
+var yearElement = document.querySelector(".dynamic--time");
 
 // Close navbar phone menu by clicking outside it
 function handleClickOutside(event) {
@@ -102,3 +105,9 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Dynamic date
+var actualDate = new Date();
+var year = actualDate.getFullYear();
+
+yearElement.textContent = year;
