@@ -654,40 +654,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[150px\]{
-  max-width: 150px;
-}
-
 .max-w-2xl{
   max-width: 42rem;
 }
 
-.max-w-\[60rem\]{
-  max-width: 60rem;
-}
-
-.max-w-\[350px\]{
-  max-width: 350px;
-}
-
-.max-w-\[70rem\]{
-  max-width: 70rem;
-}
-
-.max-w-\[100rem\]{
-  max-width: 100rem;
-}
-
-.max-w-\[80rem\]{
-  max-width: 80rem;
-}
-
-.max-w-\[50rem\]{
-  max-width: 50rem;
-}
-
-.max-w-\[90rem\]{
-  max-width: 90rem;
+.max-w-\[150px\]{
+  max-width: 150px;
 }
 
 .-translate-x-1\/2{
@@ -813,11 +785,6 @@ video {
   background-repeat: repeat;
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .object-center{
   -o-object-position: center;
      object-position: center;
@@ -836,9 +803,9 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2{
@@ -849,11 +816,6 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pl-2{
@@ -994,34 +956,12 @@ video {
     width: 50%;
   }
 
-  .md\:max-w-4xl{
-    max-width: 56rem;
-  }
-
-  .md\:max-w-3xl{
-    max-width: 48rem;
-  }
-
-  .md\:max-w-\[50rem\]{
-    max-width: 50rem;
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .md\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 }
 
@@ -1092,20 +1032,8 @@ video {
     width: 100%;
   }
 
-  .lg\:max-w-4xl{
-    max-width: 56rem;
-  }
-
   .lg\:max-w-3xl{
     max-width: 48rem;
-  }
-
-  .lg\:max-w-\[80rem\]{
-    max-width: 80rem;
-  }
-
-  .lg\:max-w-\[50rem\]{
-    max-width: 50rem;
   }
 
   .lg\:max-w-\[60rem\]{
@@ -1172,20 +1100,17 @@ video {
     padding-right: 0px;
   }
 
-  .lg\:pr-14{
-    padding-right: 3.5rem;
-  }
-
-  .lg\:pr-16{
-    padding-right: 4rem;
-  }
-
   .lg\:pr-24{
     padding-right: 6rem;
   }
 
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl{
@@ -1197,11 +1122,6 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .lg\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 1280px){
@@ -1209,22 +1129,22 @@ video {
     max-width: 72rem;
   }
 
-  .xl\:max-w-\[80rem\]{
-    max-width: 80rem;
-  }
-
   .xl\:max-w-\[200px\]{
     max-width: 200px;
   }
 
-  .xl\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .xl\:max-w-\[80rem\]{
+    max-width: 80rem;
   }
 
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
