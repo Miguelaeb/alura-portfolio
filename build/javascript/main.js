@@ -57,6 +57,7 @@ form.addEventListener("submit", function (event) {
 
     // Check if the name input is empty
     if (nameForm.value.trim() === "") {
+        nameForm.classList.add("outline-portfolio-primery-color-red");
         nameError.classList.add("border-red-400");
         nameError.classList.remove("hidden");
     } else {
