@@ -36,7 +36,7 @@ document.addEventListener("click", handleClickOutside);
 
 // Dwonload PDF
 downloadButton.addEventListener("click", function () {
-    window.open('../PDF/Miguel Evangelista Front end developer.pdf', '_blank');
+    window.open('./PDF/Miguel Evangelista Front end developer.pdf', '_blank');
 });
 
 // Form validation
