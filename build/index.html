@@ -12,20 +12,22 @@
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+            <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
         <title>Portfolio | Miguel Evangelista</title>
     </head>
 
-    <!-- TODO Add animation to the website -->
-
     <body
-        class="relative bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-8 py-4 lg:px-0">
+        class="relative z-10 bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-8 py-4 lg:px-0">
         <nav
             class="relative lg:max-w-[60rem] xl:max-w-[80rem] 2xl:max-w-[100rem] lg:mx-auto">
             <div class="relative flex flex-wrap items-center justify-between">
                 <a
                     href="#"
-                    class="logo flex items-center justify-center bg-black w-10 h-10 rounded-md hover:scale-110 transition duration-300 ease-in-out">
+                    class="logo flex items-center justify-center bg-black w-10 h-10 rounded-md hover:scale-110 transition duration-200 ease-in-out">
                     <span
                         class="self-center text-portfolio-background-color text-2xl font-Poppins font-semibold"
                         >M</span
@@ -45,7 +47,7 @@
                     class="navbar--links--container hidden bg-white w-10/12 rounded-md fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 lg:block lg:relative lg:top-0 lg:left-0 lg:transform-none lg:bg-portfolio-background-color lg:w-auto"
                     id="navbar-default">
                     <ul
-                        class="navbar--links flex flex-col gap-4 p-4 lg:p-0 lg:flex-row lg:space-x-8">
+                        class="navbar--links flex flex-col gap-4 p-4 lg:p-0 lg:flex-row lg:space-x-8 fadeIn lg:animate-none">
                         <li>
                             <a
                                 href="#projects"
