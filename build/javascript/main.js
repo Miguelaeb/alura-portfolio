@@ -1,7 +1,5 @@
 const iconHumberger = document.querySelector(".icon--humburger");
-const navbarLinksContainer = document.querySelector(
-    ".navbar--links--container"
-);
+const navbarLinksContainer = document.querySelector(".navbar--links--container");
 const logo = document.querySelector(".logo");
 const headerContainer = document.querySelector(".header--container");
 const mainContainer = document.querySelector(".main--container");
