@@ -39,7 +39,7 @@ document.addEventListener("click", handleClickOutside);
 // Dwonload PDF
 downloadButton.addEventListener("click", function () {
     var link = document.createElement("a");
-    link.download = "resume.pdf";
+    link.download = "Miguel Evangelista Front End CV.pdf";
     link.href = "/build/PDF/resume.pdf";
     link.click();
 });
