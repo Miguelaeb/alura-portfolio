@@ -642,6 +642,10 @@ video {
   width: 83.333333%;
 }
 
+.w-2\/3{
+  width: 66.666667%;
+}
+
 .w-6{
   width: 1.5rem;
 }
@@ -1056,6 +1060,10 @@ video {
     margin-top: 6rem;
   }
 
+  .lg\:mt-14{
+    margin-top: 3.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1088,12 +1096,40 @@ video {
     width: 100%;
   }
 
+  .lg\:w-2\/3{
+    width: 66.666667%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:max-w-3xl{
     max-width: 48rem;
   }
 
   .lg\:max-w-\[60rem\]{
     max-width: 60rem;
+  }
+
+  .lg\:max-w-\[150px\]{
+    max-width: 150px;
+  }
+
+  .lg\:max-w-\[300px\]{
+    max-width: 300px;
+  }
+
+  .lg\:max-w-\[350px\]{
+    max-width: 350px;
+  }
+
+  .lg\:max-w-\[200px\]{
+    max-width: 200px;
+  }
+
+  .lg\:max-w-\[2500px\]{
+    max-width: 2500px;
   }
 
   .lg\:transform-none{
@@ -1134,6 +1170,18 @@ video {
 
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+
+  .lg\:gap-16{
+    gap: 4rem;
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -1200,6 +1248,10 @@ video {
 
   .xl\:max-w-\[80rem\]{
     max-width: 80rem;
+  }
+
+  .xl\:max-w-\[400px\]{
+    max-width: 400px;
   }
 
   .xl\:text-3xl{

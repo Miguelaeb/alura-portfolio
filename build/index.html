@@ -298,7 +298,7 @@
                     <div
                         class="max-w-[150px] mx-auto flex justify-center items-center mt-10 lg:mt-0 xl:max-w-[200px]">
                         <img
-                            src="./images/avatar.png"
+                            src="./images/avatar2.png"
                             alt="avatar-1"
                             class="w-full" />
                     </div>
@@ -534,97 +534,110 @@
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
-                <form class="mt-14" id="contactForm" method="post">
-                    <div>
-                        <label
-                            for="name"
-                            class="block text-left font-SourceSansPro font-semibold text-lg"
-                            >Your name:</label
-                        >
-                        <input
-                            type="text"
-                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
-                            id="name"
-                            aria-describedby="nameError"
-                            name="name" />
-                        <p
-                            class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
-                            id="nameError"
-                            role="alert"
-                            aria-live="assertive">
-                            Name cannot be empty
-                        </p>
+                <div class="lg:flex lg:justify-between lg:mt-14">
+                    <div
+                        class="hidden lg:max-w-[2500px] lg:flex lg:justify-center xl:max-w-[400px]">
+                        <img
+                            src="./images/avatar3.png"
+                            alt="avatar-3"
+                            class="w-full" />
                     </div>
+                    
+                    <form class="mt-14 lg:mt-0 lg:w-1/2" id="contactForm" method="post">
+                        <div>
+                            <label
+                                for="name"
+                                class="block text-left font-SourceSansPro font-semibold text-lg"
+                                >Your name:</label
+                            >
+                            <input
+                                type="text"
+                                class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
+                                id="name"
+                                aria-describedby="nameError"
+                                name="name" />
+                            <p
+                                class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
+                                id="nameError"
+                                role="alert"
+                                aria-live="assertive">
+                                Name cannot be empty
+                            </p>
+                        </div>
+    
+                        <div>
+                            <label
+                                for="email"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                >Your email:</label
+                            >
+                            <input
+                                type="email"
+                                class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro placeholder:text-portfolio-primery-color-red"
+                                id="email"
+                                aria-describedby="emailError"
+                                name="email"
+                                placeholder="" />
+                            <p
+                                class="hidden font-SohurceSansPro text-portfolio-primery-color-red text-left"
+                                id="emailError"
+                                role="alert"
+                                aria-live="assertive">
+                                Looks like this is not an email
+                            </p>
+                        </div>
+    
+                        <div>
+                            <label
+                                for="subject"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                >Subject:</label
+                            >
+                            <input
+                                type="text"
+                                class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
+                                id="subject"
+                                aria-describedby="subjectError"
+                                name="subject" />
+                            <p
+                                class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
+                                id="subjectError"
+                                role="alert"
+                                aria-live="assertive">
+                                Subject cannot be empty
+                            </p>
+                        </div>
+    
+                        <div>
+                            <label
+                                for="message"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                >Message:</label
+                            >
+                            <textarea
+                                aria-describedby="messageError"
+                                id="message"
+                                class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro"
+                                name="message"></textarea>
+                            <p
+                                class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
+                                id="messageError"
+                                role="alert"
+                                aria-live="assertive">
+                                Message cannot be empty
+                            </p>
+                        </div>
+    
+                        <button
+                            type="submit"
+                            class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out">
+                            Send
+                        </button>
+                    </form>
+                </div>
+   
 
-                    <div>
-                        <label
-                            for="email"
-                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
-                            >Your email:</label
-                        >
-                        <input
-                            type="email"
-                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro placeholder:text-portfolio-primery-color-red"
-                            id="email"
-                            aria-describedby="emailError"
-                            name="email"
-                            placeholder="" />
-                        <p
-                            class="hidden font-SohurceSansPro text-portfolio-primery-color-red text-left"
-                            id="emailError"
-                            role="alert"
-                            aria-live="assertive">
-                            Looks like this is not an email
-                        </p>
-                    </div>
-
-                    <div>
-                        <label
-                            for="subject"
-                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
-                            >Subject:</label
-                        >
-                        <input
-                            type="text"
-                            class="w-full border-solid border-2 p-3 pl-8 rounded-lg font-SourceSansPro focus:font-SourceSansPro"
-                            id="subject"
-                            aria-describedby="subjectError"
-                            name="subject" />
-                        <p
-                            class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
-                            id="subjectError"
-                            role="alert"
-                            aria-live="assertive">
-                            Subject cannot be empty
-                        </p>
-                    </div>
-
-                    <div>
-                        <label
-                            for="message"
-                            class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
-                            >Message:</label
-                        >
-                        <textarea
-                            aria-describedby="messageError"
-                            id="message"
-                            class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro"
-                            name="message"></textarea>
-                        <p
-                            class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
-                            id="messageError"
-                            role="alert"
-                            aria-live="assertive">
-                            Message cannot be empty
-                        </p>
-                    </div>
-
-                    <button
-                        type="submit"
-                        class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out">
-                        Send
-                    </button>
-                </form>
+                
             </section>
         </main>
 
