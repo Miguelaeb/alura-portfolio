@@ -57,33 +57,39 @@ form.addEventListener("submit", function (event) {
 
     // Check if the name input is empty
     if (nameForm.value.trim() === "") {
-        nameForm.classList.add("outline-portfolio-primery-color-red");
-        nameError.classList.add("border-red-400");
+        nameForm.classList.add("border-portfolio-primery-color-red");
         nameError.classList.remove("hidden");
     } else {
+        nameForm.classList.add("border-green-500");
         nameError.classList.add("hidden");
     }
 
     // Check if the email input is valid
     const emailPattern = /\S+@\S+\.\S+/;
     if (!emailPattern.test(emailForm.value.trim())) {
+        emailForm.classList.add("border-portfolio-primery-color-red");
         emailError.classList.remove("hidden");
         emailForm.placeholder = "email@example/com";
     } else {
+        emailForm.classList.add("border-green-500");
         emailError.classList.add("hidden");
     }
 
     // Subject if the name input is empty
     if (subjectForm.value.trim() === "") {
+        subjectForm.classList.add("border-portfolio-primery-color-red");
         subjectError.classList.remove("hidden");
     } else {
+        subjectForm.classList.add("border-green-500");
         subjectError.classList.add("hidden");
     }
 
     // Message if the name input is empty
     if (messageForm.value.trim() === "") {
+        messageForm.classList.add("border-portfolio-primery-color-red");
         messageError.classList.remove("hidden");
     } else {
+        messageForm.classList.add("border-green-500");
         messageError.classList.add("hidden");
     }
 });
