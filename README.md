@@ -2,7 +2,7 @@
 
 ### Preview
 
-![Design preview for the portfolio](./images/FireShot%20Capture%20003%20-%20Document%20-%20miguelaeb.github.io.png)
+![Design preview for the portfolio](./images/alura_portafolio.png)
 
 ## The challenge
 
