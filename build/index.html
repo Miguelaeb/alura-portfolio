@@ -17,9 +17,6 @@
         <title>Portfolio | Miguel Evangelista</title>
     </head>
 
-    <!-- TODO check mobile blur -->
-    <!-- TODO fix mobile blur time -->
-
     <body
         class="relative z-10 bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-8 py-4 lg:px-0">
         <nav
@@ -111,7 +108,7 @@
         <header
             class="header--container max-w-2xl mx-auto relative text-center mt-20 lg:flex lg:flex-row-reverse lg:justify-between lg:max-w-3xl xl:max-w-6xl transition duration-100 ease-in-out">
             <div class="max-w-[150px] mx-auto xl:max-w-[200px]">
-                <img src="./images/avatar1.png" alt="avatar-1" class="w-full" />
+                <img src="./images/avatar1.png" alt="avatar-1" class="avatar-1-img w-full" />
             </div>
 
             <div class="mt-10 lg:text-left lg:w-full lg:mt-0 lg:pr-24">
@@ -149,7 +146,7 @@
                 </div>
 
                 <button
-                    class="download--button py-2 mt-6 w-full font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md md:w-6/12 lg:mt-24 lg:w-2/6 hover:scale-105 transition duration-300 ease-in-out">
+                    class="download--button py-2 mt-6 w-full font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md md:w-6/12 lg:mt-24 lg:w-2/6 hover:scale-105 transition duration-300 ease-in-out">
                     Resume
                 </button>
             </div>
@@ -171,7 +168,7 @@
                         class="grid w-full grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
                         <div>
                             <img
-                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
+                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/encryptor_project.png"
                                 alt="text encriptador" />
 
@@ -200,7 +197,7 @@
 
                         <div>
                             <img
-                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
+                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/blogr_project.jpg"
                                 alt="text encriptador" />
 
@@ -229,7 +226,7 @@
 
                         <div>
                             <img
-                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
+                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/huddle_project.jpg"
                                 alt="text encriptador" />
 
@@ -258,7 +255,7 @@
 
                         <div>
                             <img
-                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md"
+                                class="object-center w-full mb-4 lg:h-48 md:h-36 rounded-xl shadow-md hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/alura_portafolio.png"
                                 alt="alura portafolio" />
 
@@ -539,7 +536,7 @@
 
                 <div class="lg:flex lg:justify-between lg:mt-14">
                     <div
-                        class="hidden lg:max-w-[2500px] lg:flex lg:justify-center xl:max-w-[400px]">
+                        class="hidden lg:flex lg:w-2/5 lg:justify-center ">
                         <img
                             src="./images/avatar3.png"
                             alt="avatar-3"
@@ -555,7 +552,7 @@
                             >
                             <input
                                 type="text"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none"
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
                                 id="name"
                                 aria-describedby="nameError"
                                 name="name" />
@@ -576,7 +573,7 @@
                             >
                             <input
                                 type="email"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro focus:outline-none placeholder:text-portfolio-primery-color-red" 
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro focus:outline-none placeholder:text-portfolio-primery-color-red bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm" 
                                 id="email"
                                 aria-describedby="emailError"
                                 name="email"
@@ -598,7 +595,7 @@
                             >
                             <input
                                 type="text"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none"
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
                                 id="subject"
                                 aria-describedby="subjectError"
                                 name="subject" />
@@ -620,7 +617,7 @@
                             <textarea
                                 aria-describedby="messageError"
                                 id="message"
-                                class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro focus:outline-none"
+                                class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
                                 name="message"></textarea>
                             <p
                                 class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
@@ -633,14 +630,11 @@
     
                         <button
                             type="submit"
-                            class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out">
+                            class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out">
                             Send
                         </button>
                     </form>
                 </div>
-   
-
-                
             </section>
         </main>
 

@@ -6,7 +6,17 @@ const mainContainer = document.querySelector(".main--container");
 const downloadButton = document.querySelector(".download--button");
 const footerContainer = document.querySelector(".footer--container");
 const form = document.querySelector("#contactForm");
-var yearElement = document.querySelector(".dynamic--time");
+const yearElement = document.querySelector(".dynamic--time");
+const imgHover = document.querySelector(".avatar-1-img")
+
+// Hover img
+imgHover.addEventListener('mouseover', () => {
+    imgHover.src = './images/hover-avatar.png';
+  });
+  
+  imgHover.addEventListener('mouseout', () => {
+    imgHover.src = './images/avatar1.png';
+  });
 
 // Close navbar phone menu by clicking outside it
 function handleClickOutside(event) {
