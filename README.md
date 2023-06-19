@@ -2,7 +2,7 @@
 
 ### Preview
 
-![Design preview for the portfolio](./images/alura_portafolio.png)
+![previw](./build/images/alura_portafolio.png)
 
 ## The challenge
 
