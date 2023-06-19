@@ -6,7 +6,7 @@
 
 ## The challenge
 
-The challenge was to create a portfolio where we can show our projects to possible recruiters,
+The challenge was to create a portfolio where we can show our projects to possible recruiters.
 
 ### Requirements
 
