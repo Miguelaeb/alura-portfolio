@@ -104,20 +104,6 @@ form.addEventListener("submit", function (event) {
     }
 });
 
-// Smooth scroll
-window.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((link) => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute("href"));
-            target.scrollIntoView({
-                behavior: "smooth",
-            });
-        });
-    });
-});
-
 // Dynamic date
 var actualDate = new Date();
 var year = actualDate.getFullYear();
