@@ -807,6 +807,10 @@ video {
   background-repeat: repeat;
 }
 
+.stroke-black{
+  stroke: #000;
+}
+
 .object-center{
   -o-object-position: center;
      object-position: center;
@@ -1030,6 +1034,10 @@ video {
 :is(.dark .dark\:bg-portfolio-background-color){
   --tw-bg-opacity: 1;
   background-color: rgb(236 236 238 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:stroke-white){
+  stroke: #fff;
 }
 
 :is(.dark .dark\:text-black){
