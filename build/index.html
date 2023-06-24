@@ -21,37 +21,28 @@
     <!-- TODO add dark mode option -->
 
     <body
-        class="relative z-10 bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-8 py-4 lg:px-0">
+        class="relative z-10 bg-portfolio-background-color bg-[url('../images/grid.svg')] bg-repeat px-8 py-4 lg:px-0 dark:bg-black">
         <nav
             class="relative lg:max-w-[60rem] xl:max-w-[80rem] 2xl:max-w-[100rem] lg:mx-auto">
             <div class="relative flex flex-wrap items-center justify-between">
                 <a
                     href="#"
-                    class="logo flex items-center justify-center bg-black w-10 h-10 rounded-md hover:scale-110 transition duration-200 ease-in-out">
+                    class="logo flex items-center justify-center bg-black w-10 h-10 rounded-md hover:scale-110 transition duration-200 ease-in-out dark:bg-portfolio-background-color">
                     <span
-                        class="self-center text-portfolio-background-color text-2xl font-Poppins font-semibold"
+                        class="self-center text-portfolio-background-color text-2xl font-Poppins font-semibold dark:text-black"
                         >M</span
                     >
                 </a>
-                <button
-                    data-collapse-toggle="navbar-default"
-                    type="button"
-                    class="icon--humburger inline-flex items-center text-sm lg:hidden"
-                    aria-controls="navbar-default"
-                    aria-expanded="false">
-                    <img
-                        src="./images/icon-hamburger.svg"
-                        alt="humburger--icon" />
-                </button>
+
                 <div
-                    class="navbar--links--container hidden bg-white w-10/12 rounded-md fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 lg:block lg:relative lg:top-0 lg:left-0 lg:transform-none lg:bg-portfolio-background-color lg:w-auto"
+                    class="navbar--links--container hidden bg-white w-10/12 rounded-md fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 lg:block lg:relative lg:top-0 lg:left-0 lg:transform-none lg:bg-transparent lg:w-auto"
                     id="navbar-default">
                     <ul
                         class="navbar--links flex flex-col gap-4 p-4 lg:p-0 lg:flex-row lg:space-x-8 fadeIn lg:animate-none">
                         <li>
                             <a
                                 href="#projects"
-                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-none"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-transparent dark:text-portfolio-background-color dark:hover:text-blue-500"
                                 >Projects
                                 <p
                                     class="font-SourceSansPro text-lg mt-2 md:hidden">
@@ -62,7 +53,7 @@
                         <li>
                             <a
                                 href="#aboutMe"
-                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-transparent dark:text-portfolio-background-color dark:hover:text-blue-500"
                                 >About me
                                 <p
                                     class="font-SourceSansPro text-lg mt-2 md:hidden">
@@ -73,7 +64,7 @@
                         <li>
                             <a
                                 href="#technologies"
-                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-transparent dark:text-portfolio-background-color dark:hover:text-blue-500"
                                 >Technologies
                                 <p
                                     class="font-SourceSansPro text-lg mt-2 md:hidden">
@@ -84,7 +75,7 @@
                         <li>
                             <a
                                 href="#education"
-                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-transparent dark:text-portfolio-background-color dark:hover:text-blue-500"
                                 >Education
                                 <p
                                     class="font-SourceSansPro text-lg mt-2 md:hidden">
@@ -95,7 +86,7 @@
                         <li>
                             <a
                                 href="#contact"
-                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red"
+                                class="block py-2 pl-3 pr-4 font-Poppins text-base bg-portfolio-background-color rounded-md hover:text-portfolio-primery-color-red lg:bg-transparent dark:text-portfolio-background-color dark:hover:text-blue-500"
                                 >Contact
                                 <p
                                     class="font-SourceSansPro text-lg mt-2 md:hidden">
@@ -104,6 +95,27 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="flex gap-3">
+                    <button class="moon w-7">
+                        <img src="./images/moon_icon.png" alt="moon icon" class="cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
+                    </button>
+
+                    <button class="sun w-7">
+                        <img src="./images/soon_icon.png" alt="sun icon" class="cursor-pointer hover:scale-110 transition duration-200 ease-in-out">
+                    </button>
+                    
+                    <button
+                        data-collapse-toggle="navbar-default"
+                        type="button"
+                        class="icon--humburger inline-flex items-center text-sm lg:hidden"
+                        aria-controls="navbar-default"
+                        aria-expanded="false">
+                        <img
+                            src="./images/icon-hamburger.svg"
+                            alt="humburger--icon" />
+                    </button>
                 </div>
             </div>
         </nav>
@@ -115,14 +127,14 @@
             </div>
 
             <div class="mt-10 lg:text-left lg:w-full lg:mt-0 lg:pr-24">
-                <h1 class="font-Poppins text-2xl lg:text-3xl xl:text-4xl">
+                <h1 class="font-Poppins text-2xl lg:text-3xl xl:text-4xl dark:text-portfolio-background-color">
                     Miguel
-                    <span class="text-portfolio-primery-color-red"
+                    <span class="text-portfolio-primery-color-red dark:text-blue-500"
                         >Evangelista,<br />
                     </span>
                     Front-End Developer
                 </h1>
-                <p class="font-SourceSansPro mt-6 md:mx-28 lg:mx-0">
+                <p class="font-SourceSansPro mt-6 md:mx-28 lg:mx-0 dark:text-portfolio-background-color">
                     I'm dedicated to constructing responsive web solutions that
                     blend sleek design with intuitive navigation.
                 </p>
@@ -130,26 +142,26 @@
                 <div class="flex justify-center gap-4 mt-5 lg:justify-start">
                     <a href="https://github.com/Miguelaeb"
                         ><i
-                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-portfolio-primery-color-red"></i
                     ></a>
                     <a href="https://twitter.com/Miguel_Studded"
                         ><i
-                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-portfolio-primery-color-red"></i
                     ></a>
                     <a
                         href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"
                         ><i
-                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-portfolio-primery-color-red"></i
                     ></a>
                     <a
                         href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="
                         ><i
-                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-portfolio-primery-color-red"></i
                     ></a>
                 </div>
 
                 <button
-                    class="download--button py-2 mt-6 w-full font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md md:w-6/12 lg:mt-24 lg:w-2/6 hover:scale-105 transition duration-300 ease-in-out">
+                    class="download--button py-2 mt-6 w-full font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md md:w-6/12 lg:mt-24 lg:w-2/6 hover:scale-105 transition duration-300 ease-in-out dark:bg-blue-500 dark:text-black">
                     Resume
                 </button>
             </div>
@@ -159,7 +171,7 @@
             class="main--container max-w-2xl mx-auto relative text-center mb-14 lg:max-w-3xl xl:max-w-6xl">
             <section class="mt-20" id="projects">
                 <h2
-                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl">
+                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl dark:text-portfolio-background-color">
                     Projects.
                 </h2>
 
@@ -177,7 +189,7 @@
 
                             <div class="flex justify-between">
                                 <p
-                                    class="font-SourceSansPro font-semibold text-lg">
+                                    class="font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                                     Text encryptor
                                 </p>
 
@@ -186,13 +198,13 @@
                                         href="https://github.com/Miguelaeb/encrypter-project"
                                         target="_blank"
                                         ><i
-                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red"></i
+                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                     <a
                                         href="https://miguelaeb.github.io/encrypter-project/"
                                         target="_blank"
                                         ><i
-                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red"></i
+                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                 </div>
                             </div>
@@ -206,7 +218,7 @@
 
                             <div class="flex justify-between">
                                 <p
-                                    class="font-SourceSansPro font-semibold text-lg">
+                                    class="font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                                     Blogr landing page
                                 </p>
 
@@ -215,13 +227,13 @@
                                         href="https://github.com/Miguelaeb/blogr-landing-page"
                                         target="_blank"
                                         ><i
-                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red"></i
+                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                     <a
                                         href="https://blogr-landing-page-toyy.onrender.com/"
                                         target="_blank"
                                         ><i
-                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red"></i
+                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                 </div>
                             </div>
@@ -235,7 +247,7 @@
 
                             <div class="flex justify-between">
                                 <p
-                                    class="font-SourceSansPro font-semibold text-lg">
+                                    class="font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                                     Huddle landing page
                                 </p>
 
@@ -244,13 +256,13 @@
                                         href="https://github.com/Miguelaeb/huddle-landing-page-with-curved-sections"
                                         target="_blank"
                                         ><i
-                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red"></i
+                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                     <a
                                         href="https://miguelaeb.github.io/huddle-landing-page-with-curved-sections/"
                                         target="_blank"
                                         ><i
-                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red"></i
+                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                 </div>
                             </div>
@@ -264,7 +276,7 @@
 
                             <div class="flex justify-between">
                                 <p
-                                    class="font-SourceSansPro font-semibold text-lg">
+                                    class="font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                                     Portfolio
                                 </p>
 
@@ -273,13 +285,13 @@
                                         href="https://github.com/Miguelaeb/alura-portfolio"
                                         target="_blank"
                                         ><i
-                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red"></i
+                                            class="fa-brands fa-github hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                     <a
                                         href="https://alura-portfolio.onrender.com"
                                         target="_blank"
                                         ><i
-                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red"></i
+                                            class="fa-sharp fa-solid fa-arrow-up-right-from-square hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                                     ></a>
                                 </div>
                             </div>
@@ -290,7 +302,7 @@
 
             <section class="mt-20" id="aboutMe">
                 <h2
-                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl">
+                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl dark:text-portfolio-background-color">
                     About me.
                 </h2>
                 <div
@@ -308,30 +320,30 @@
 
                     <div class="lg:text-left lg:w-3/5">
                         <p
-                            class="font-SourceSansPros mt-12 lg:mt-0 lg:text-base">
+                            class="font-SourceSansPros mt-12 lg:mt-0 lg:text-base dark:text-portfolio-background-color">
                             I am a junior front-end developer currently residing
                             in Santo Domingo, Dominican Republic.
                         </p>
 
-                        <p class="font-SourceSansPro mt-6 lg:text-base">
+                        <p class="font-SourceSansPro mt-6 lg:text-base dark:text-portfolio-background-color">
                             I specialize in creating web applications and user
                             interfaces that are not only visually appealing but
                             also easy to use and navigate. My experience
                             includes
-                            <span class="text-portfolio-primery-color-red"
+                            <span class="text-portfolio-primery-color-red dark:text-blue-500"
                                 >HTML</span
                             >,
-                            <span class="text-portfolio-primery-color-red"
+                            <span class="text-portfolio-primery-color-red dark:text-blue-500"
                                 >CSS</span
                             >,
-                            <span class="text-portfolio-primery-color-red"
+                            <span class="text-portfolio-primery-color-red dark:text-blue-500"
                                 >JavaScript</span
                             >, and frameworks like
-                            <span class="text-portfolio-primery-color-red"
+                            <span class="text-portfolio-primery-color-red dark:text-blue-500"
                                 >Tailwind CSS</span
                             >
                             and
-                            <span class="text-portfolio-primery-color-red"
+                            <span class="text-portfolio-primery-color-red dark:text-blue-500"
                                 >Bootstrap</span
                             >. I am passionate about creating responsive and
                             accessible designs that work seamlessly on different
@@ -343,14 +355,14 @@
 
             <section class="mt-20" id="technologies">
                 <h2
-                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl">
+                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl dark:text-portfolio-background-colo dark:text-portfolio-background-color">
                     Technologies.
                 </h2>
                 <div
                     class="line w-full h-[2px] bg-portfolio-primary-color-grey mt-2"></div>
 
                 <p
-                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg">
+                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                     Front-End.
                 </p>
 
@@ -364,7 +376,7 @@
                                 src="./images/html_logo.png"
                                 alt="html logo" />
 
-                            <p class="font-SourceSansPro">HTML</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">HTML</p>
                         </div>
 
                         <div
@@ -374,7 +386,7 @@
                                 src="./images/css_logo.png"
                                 alt="css logo" />
 
-                            <p class="font-SourceSansPro">CSS</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">CSS</p>
                         </div>
 
                         <div
@@ -384,7 +396,7 @@
                                 src="./images/javascript_logo.png"
                                 alt="javascript logo" />
 
-                            <p class="font-SourceSansPro">JavaScript</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">JavaScript</p>
                         </div>
 
                         <div
@@ -394,7 +406,7 @@
                                 src="./images/react_logo.png"
                                 alt="javascript logo" />
 
-                            <p class="font-SourceSansPro">React</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">React</p>
                         </div>
 
                         <div
@@ -404,7 +416,7 @@
                                 src="./images/tailwind_logo.png"
                                 alt="tailwind logo" />
 
-                            <p class="font-SourceSansPro">Tailwind CSS</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Tailwind CSS</p>
                         </div>
 
                         <div
@@ -414,7 +426,7 @@
                                 src="./images/bootstrap_logo.png"
                                 alt="bootstrap logo" />
 
-                            <p class="font-SourceSansPro">Bootstrap</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Bootstrap</p>
                         </div>
 
                         <div
@@ -424,13 +436,13 @@
                                 src="./images/material_logo.png"
                                 alt="bootstrap logo" />
 
-                            <p class="font-SourceSansPro">Material UI</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Material UI</p>
                         </div>
                     </div>
                 </div>
 
                 <p
-                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg">
+                    class="mt-14 text-left font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color">
                     Tools.
                 </p>
 
@@ -444,7 +456,7 @@
                                 src="./images/vs_logo.png"
                                 alt="vsCode logo" />
 
-                            <p class="font-SourceSansPro">VS Code</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">VS Code</p>
                         </div>
 
                         <div
@@ -454,7 +466,7 @@
                                 src="./images/github_logo.png"
                                 alt="github logo" />
 
-                            <p class="font-SourceSansPro">Github</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Github</p>
                         </div>
 
                         <div
@@ -466,7 +478,7 @@
                                 src="./images/git_logo.png"
                                 alt="git logo" />
 
-                            <p class="font-SourceSansPro">Git</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Git</p>
                         </div>
 
                         <div
@@ -477,7 +489,7 @@
                                 src="./images/npm_logo.png"
                                 alt="npm logo" />
 
-                            <p class="font-SourceSansPro">NPM</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">NPM</p>
                         </div>
 
                         <div
@@ -487,7 +499,7 @@
                                 src="./images/yarn_logo.png"
                                 alt="yarn logo" />
 
-                            <p class="font-SourceSansPro">Yarn</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Yarn</p>
                         </div>
 
                         <div
@@ -498,7 +510,7 @@
                                 src="./images/figma_logo.png"
                                 alt="figma logo" />
 
-                            <p class="font-SourceSansPro">Figma</p>
+                            <p class="font-SourceSansPro dark:text-portfolio-background-color">Figma</p>
                         </div>
                     </div>
                 </div>
@@ -506,7 +518,7 @@
 
             <section class="mt-20" id="education">
                 <h2
-                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl">
+                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl dark:text-portfolio-background-color">
                     Education.
                 </h2>
 
@@ -521,7 +533,7 @@
                                 class="w-full mb-4 lg:h-48 md:h-36 rounded-xl hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/itsc_logo.jpg"
                                 alt="udemy" />
-                            <p class="font-SourceSansPro font-semibold">
+                            <p class="font-SourceSansPro font-semibold dark:text-portfolio-background-color">
                                 Software Development | 2018 | ITSC
                             </p>
                         </a>
@@ -531,7 +543,7 @@
                                 class="w-full mb-4 lg:h-48 md:h-36 rounded-xl hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/udemy_logo.png"
                                 alt="udemy" />
-                            <p class="font-SourceSansPro font-semibold">
+                            <p class="font-SourceSansPro font-semibold dark:text-portfolio-background-color">
                                 HTML/CSS/JavaScript | 2019 | Udemy
                             </p>
                         </a>
@@ -541,7 +553,7 @@
                                 class="w-full mb-4 lg:h-48 md:h-36 rounded-xl hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/freeeCodeCamp_logo.png"
                                 alt="freeCodeCamp" />
-                            <p class="font-SourceSansPro font-semibold">
+                            <p class="font-SourceSansPro font-semibold dark:text-portfolio-background-color">
                                 Responsive Web Design | 2020 | freeCodeCamp
                             </p>
                         </a>
@@ -551,7 +563,7 @@
                                 class="w-full mb-4 lg:h-48 md:h-36 rounded-xl hover:scale-110 transition duration-300 ease-in-out"
                                 src="./images/alura_logo.png"
                                 alt="alura" />
-                            <p class="font-SourceSansPro font-semibold">
+                            <p class="font-SourceSansPro font-semibold dark:text-portfolio-background-color">
                                 Front-End Development | 2023 | Alura Latam
                             </p>
                         </a>
@@ -561,7 +573,7 @@
 
             <section class="mt-20" id="contact">
                 <h2
-                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl">
+                    class="font-Poppins font-semibold text-2xl lg:text-2xl xl:text-3xl dark:text-portfolio-background-color">
                     Contact.
                 </h2>
                 <div
@@ -580,12 +592,12 @@
                         <div>
                             <label
                                 for="name"
-                                class="block text-left font-SourceSansPro font-semibold text-lg"
+                                class="block text-left font-SourceSansPro font-semibold text-lg dark:text-portfolio-background-color"
                                 >Your name:</label
                             >
                             <input
                                 type="text"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm dark:focus:text-portfolio-background-color"
                                 id="name"
                                 aria-describedby="nameError"
                                 name="name" />
@@ -601,12 +613,12 @@
                         <div>
                             <label
                                 for="email"
-                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4 dark:text-portfolio-background-color"
                                 >Your email:</label
                             >
                             <input
                                 type="email"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro focus:outline-none placeholder:text-portfolio-primery-color-red bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm" 
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro placeholder:font-SourceSansPro focus:outline-none placeholder:text-portfolio-primery-color-red bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm dark:focus:text-portfolio-background-color" 
                                 id="email"
                                 aria-describedby="emailError"
                                 name="email"
@@ -623,12 +635,12 @@
                         <div>
                             <label
                                 for="subject"
-                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4 dark:text-portfolio-background-color"
                                 >Subject:</label
                             >
                             <input
                                 type="text"
-                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
+                                class="w-full border-solid border-2 p-3 rounded-lg font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm dark:focus:text-portfolio-background-color"
                                 id="subject"
                                 aria-describedby="subjectError"
                                 name="subject" />
@@ -644,13 +656,13 @@
                         <div>
                             <label
                                 for="message"
-                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4"
+                                class="block text-left font-SourceSansPro font-semibold text-lg mt-4 dark:text-portfolio-background-color"
                                 >Message:</label
                             >
                             <textarea
                                 aria-describedby="messageError"
                                 id="message"
-                                class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm"
+                                class="w-full border-solid border-2 p-3 rounded-lg resize-none font-SourceSansPro focus:font-SourceSansPro focus:outline-none bg-portfolio-primary-color-grey/10 backdrop:blur-sm shadow-sm dark:focus:text-portfolio-background-color"
                                 name="message"></textarea>
                             <p
                                 class="hidden font-SourceSansPro text-portfolio-primery-color-red text-left"
@@ -663,7 +675,7 @@
     
                         <button
                             type="submit"
-                            class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out">
+                            class="block py-2 px-10 mt-6 font-SourceSansPro font-semibold text-lg text-portfolio-background-color bg-portfolio-primery-color-red rounded-md lg:px-20 hover:scale-105 transition duration-300 ease-in-out dark:bg-blue-500 dark:text-black">
                             Send
                         </button>
                     </form>
@@ -682,32 +694,32 @@
                 <div class="flex justify-center gap-4 mt-5">
                     <a href="https://github.com/Miguelaeb" target="_blank"
                         ><i
-                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-github text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                     ></a>
                     <a href="https://twitter.com/Miguel_Studded" target="_blank"
                         ><i
-                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-twitter text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                     ></a>
                     <a
                         href="https://www.linkedin.com/in/miguel-evangelista-8458b9150/"
                         target="_blank"
                         ><i
-                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-linkedin-in text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                     ></a>
                     <a
                         href="https://instagram.com/miguel_aeb?igshid=NTc4MTIwNjQ2YQ=="
                         target="_blank"
                         ><i
-                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red"></i
+                            class="fa-brands fa-instagram text-xl hover:text-portfolio-primery-color-red dark:text-portfolio-background-color dark:hover:text-blue-500"></i
                     ></a>
                 </div>
 
-                <p class="text-center font-SourceSansPro text-lg my-5">
+                <p class="text-center font-SourceSansPro text-lg my-5 dark:text-portfolio-background-color">
                     © <span class="dynamic--time">2023</span>
                     <a
                         href="https://github.com/Miguelaeb"
                         target="_blank"
-                        class="text-portfolio-primery-color-red hover:text-black"
+                        class="text-portfolio-primery-color-red hover:text-black dark:text-blue-500 dark:hover:text-portfolio-background-color"
                         >Miguel Evangelista™</a
                     >
                     All Rights Reserved.

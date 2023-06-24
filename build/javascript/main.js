@@ -1,5 +1,7 @@
 const iconHumberger = document.querySelector(".icon--humburger");
-const navbarLinksContainer = document.querySelector(".navbar--links--container");
+const navbarLinksContainer = document.querySelector(
+    ".navbar--links--container"
+);
 const logo = document.querySelector(".logo");
 const headerContainer = document.querySelector(".header--container");
 const mainContainer = document.querySelector(".main--container");
@@ -7,16 +9,18 @@ const downloadButton = document.querySelector(".download--button");
 const footerContainer = document.querySelector(".footer--container");
 const form = document.querySelector("#contactForm");
 const yearElement = document.querySelector(".dynamic--time");
-const imgHover = document.querySelector(".avatar-1-img")
+const imgHover = document.querySelector(".avatar-1-img");
+const moonIcon = document.querySelector(".moon");
+const sunIcon = document.querySelector(".sun");
 
 // Hover img
-imgHover.addEventListener('mouseover', () => {
-    imgHover.src = './images/hover-avatar.png';
-  });
-  
-  imgHover.addEventListener('mouseout', () => {
-    imgHover.src = './images/avatar1.png';
-  });
+imgHover.addEventListener("mouseover", () => {
+    imgHover.src = "./images/hover-avatar.png";
+});
+
+imgHover.addEventListener("mouseout", () => {
+    imgHover.src = "./images/avatar1.png";
+});
 
 // Close navbar phone menu by clicking outside it
 function handleClickOutside(event) {
@@ -30,27 +34,31 @@ function handleClickOutside(event) {
         headerContainer.classList.remove("blur-lg");
         mainContainer.classList.remove("blur-lg");
         footerContainer.classList.remove("blur-lg");
+        moonIcon.classList.remove("blur-lg");
+        sunIcon.classList.remove("blur-lg");
     }
 }
 
-iconHumberger.addEventListener("click", function () {
+iconHumberger.addEventListener("click", () => {
     navbarLinksContainer.classList.remove("hidden");
     logo.classList.add("blur-lg");
     iconHumberger.classList.add("blur-lg");
     headerContainer.classList.add("blur-lg");
     mainContainer.classList.add("blur-lg");
     footerContainer.classList.add("blur-lg");
+    moonIcon.classList.add("blur-lg");
+    sunIcon.classList.add("blur-lg");
 });
 
 document.addEventListener("click", handleClickOutside);
 
 // Dwonload PDF
-downloadButton.addEventListener("click", function () {
-    window.open('./PDF/Miguel Evangelista Front end developer.pdf', '_blank');
+downloadButton.addEventListener("click", () => {
+    window.open("./PDF/Miguel Evangelista Front end developer.pdf", "_blank");
 });
 
 // Form validation
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     // input files
@@ -109,3 +117,51 @@ var actualDate = new Date();
 var year = actualDate.getFullYear();
 
 yearElement.textContent = year;
+
+// Dark mode
+
+// Theme consts
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("prefers-color-scheme: dark").matches;
+
+// Icon Toggling
+const iconToggle = () => {
+    moonIcon.classList.toggle("hidden");
+    sunIcon.classList.toggle("hidden");
+};
+
+// Initial theme check
+const themeCheck = () => {
+    if (userTheme === "dark" || (!userTheme && systemTheme)) {
+        document.documentElement.classList.add("dark");
+        moonIcon.classList.add("hidden");
+        return;
+    }
+    sunIcon.classList.add("hidden");
+};
+
+// Manual theme switch
+const themeSwitch = () => {
+    const html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+        html.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        iconToggle();
+    } else {
+        html.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        iconToggle();
+    }
+};
+
+// Call theme switch on clicking buttons
+sunIcon.addEventListener("click", () => {
+    themeSwitch();
+});
+
+moonIcon.addEventListener("click", () => {
+    themeSwitch();
+});
+
+// Invoke theme check on initial page load
+themeCheck();
