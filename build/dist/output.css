@@ -798,10 +798,6 @@ video {
   background-image: url('../images/grid.svg');
 }
 
-.bg-\[url\(\'\.\.\/images\/cubes\.png\'\)\]{
-  background-image: url('../images/cubes.png');
-}
-
 .bg-repeat{
   background-repeat: repeat;
 }
@@ -1016,11 +1012,6 @@ video {
   outline-offset: 2px;
 }
 
-:is(.dark .dark\:bg-white){
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-black){
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1054,6 +1045,11 @@ video {
 :is(.dark .dark\:text-blue-500){
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-blue-900){
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:text-portfolio-primery-color-red:hover){
@@ -1288,6 +1284,11 @@ video {
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  :is(.dark .lg\:dark\:text-portfolio-background-color){
+    --tw-text-opacity: 1;
+    color: rgb(236 236 238 / var(--tw-text-opacity));
   }
 }
 
