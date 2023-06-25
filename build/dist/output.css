@@ -1036,6 +1036,10 @@ video {
   background-color: rgb(236 236 238 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-\[url\(\'\.\.\/images\/grid1\.svg\'\)\]){
+  background-image: url('../images/grid1.svg');
+}
+
 :is(.dark .dark\:stroke-white){
   stroke: #fff;
 }
