@@ -803,6 +803,10 @@ video {
   background-image: url('../images/grid.svg');
 }
 
+.bg-\[url\(\'\.\.\/images\/grid1\.svg\'\)\]{
+  background-image: url('../images/grid1.svg');
+}
+
 .bg-repeat{
   background-repeat: repeat;
 }
