@@ -37,6 +37,7 @@ Additional features:
 - Tailwind CSS 
 - Flexbox
 - Grid
+- JavaScript
 - Mobile-first workflow
 
 ## Autor
