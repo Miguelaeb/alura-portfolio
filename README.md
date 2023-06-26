@@ -1,6 +1,6 @@
 # Portfolio - Miguel Evangelista
 
-This is a solution to the [Portfolio on Frontend Mentor](https://www.aluracursos.com/).
+This is a solution to the [Portfolio on Alura Latam](https://www.aluracursos.com/).
 
 ### Preview
 
