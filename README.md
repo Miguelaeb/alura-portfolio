@@ -1,5 +1,7 @@
 # Portfolio - Miguel Evangelista
 
+This is a solution to the [Portfolio on Alura Latam](https://www.aluracursos.com/).
+
 ### Preview
 
 ![previw](./build/images/alura_portafolio.png)
@@ -35,6 +37,7 @@ Additional features:
 - Tailwind CSS 
 - Flexbox
 - Grid
+- JavaScript
 - Mobile-first workflow
 
 ## Autor
